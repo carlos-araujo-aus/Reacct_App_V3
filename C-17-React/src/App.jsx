@@ -1,6 +1,7 @@
 import { ThemeProvider } from './components/ThemeProvider'
 import ThemeButton from './components/ThemeButton'
 import CounterWithCustomHook from './components/counterWithCustomHook'
+import CounterWithReactMemo from './components/counterWithReactMemo'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <ThemeButton />
       </ThemeProvider>
       <CounterWithCustomHook />
+      <CounterWithReactMemo />
     </>
   )
 }
