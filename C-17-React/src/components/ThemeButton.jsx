@@ -6,13 +6,16 @@ function ThemeButton() {
     const { theme , toggleTheme } = useContext(ThemeContext)
   
     return (
-      <button 
-        onClick={toggleTheme}
-        style={{ 
-          backgroundColor: theme === "light" ? "white" : "black", 
-          color: theme === "light" ? "black" : "white"}}>
-        Change Theme
-      </button>
+      <>
+        <h2>Theme Button with Provider</h2>
+        <button 
+          onClick={toggleTheme}
+          style={{ 
+            backgroundColor: theme === "light" ? "white" : "black", 
+            color: theme === "light" ? "black" : "white"}}>
+          Change Theme
+        </button>
+      </>
     )
   }
 
